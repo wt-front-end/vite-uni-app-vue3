@@ -1,8 +1,7 @@
 {
-  "name": "hahah",
-  "version": "1.0.0",
-  "description": "测试项目",
-  "main": "index.js",
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +12,6 @@
   "keywords": [
     "keyword"
   ],
-  "author": "xkloveme",
+  "author": "<%= author %>",
   "license": "ISC"
 }
