@@ -1,0 +1,18 @@
+{
+  "name": "hahah",
+  "version": "1.0.0",
+  "description": "测试项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@30.207.88.65:cli-templates/vite-uni-app-vue3.git"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "author": "xkloveme",
+  "license": "ISC"
+}
