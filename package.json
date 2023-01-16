@@ -13,5 +13,6 @@
     "keyword"
   ],
   "author": "<%= author %>",
+  "email": "<%= email %>",
   "license": "ISC"
 }
