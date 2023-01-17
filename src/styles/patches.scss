@@ -1,0 +1,79 @@
+:not(not) {
+  box-sizing: border-box;
+}
+
+.amap-logo {
+  display: none;
+  opacity: 0 !important;
+}
+
+.amap-copyright {
+  display: none;
+  opacity: 0 !important;
+}
+
+.amap-marker-label {
+  width: 5rem;
+  font-size: 16px;
+  text-align: center;
+  color: green;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  border: solid 2px rgba(100, 255, 200, 0.8);
+}
+
+.uni-searchbar__box {
+  height: 2rem !important;
+}
+
+.uni-searchbar__text-placeholder {
+  font-size: 1rem !important;
+}
+
+.uni-input-input {
+  font-size: 0.8rem !important;
+  line-height: 0.6rem !important;
+}
+
+.uni-select {
+  height: 2.3rem !important;
+}
+
+.uni-select__input-text {
+  font-size: 1rem !important;
+}
+
+.uni-select__selector-item {
+  font-size: 1.2rem !important;
+}
+.uni-tag-text--small {
+  font-size: 0.8rem !important;
+}
+.mini-btn {
+  font-size: 0.8rem !important;
+}
+
+page {
+  --safe-area-inset-top: 0px;
+  --safe-area-inset-right: 0px;
+  --safe-area-inset-bottom: 0px;
+  --safe-area-inset-left: 0px;
+}
+
+@supports (top: constant(safe-area-inset-top)) {
+  page {
+    --safe-area-inset-top: constant(safe-area-inset-top);
+    --safe-area-inset-right: constant(safe-area-inset-right);
+    --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+    --safe-area-inset-left: constant(safe-area-inset-left);
+  }
+}
+
+@supports (top: env(safe-area-inset-top)) {
+  page {
+    --safe-area-inset-top: env(safe-area-inset-top);
+    --safe-area-inset-right: env(safe-area-inset-right);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    --safe-area-inset-left: env(safe-area-inset-left);
+  }
+}

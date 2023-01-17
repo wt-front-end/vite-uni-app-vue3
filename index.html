@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <script>
+      var coverSupport =
+        'CSS' in window &&
+        typeof CSS.supports === 'function' &&
+        (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+          (coverSupport ? ', viewport-fit=cover' : '') +
+          '" />',
+      )
+    </script>
+    <script
+      type="text/javascript"
+      src="//assets.zjzwfw.gov.cn/assets/ZWJSBridge/1.1.0/zwjsbridge.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://assets.zjzwfw.gov.cn/assets/zwlog/1.0.0/zwlog.js"
+    ></script>
+    <script>
+      ;(function (w, d, s, q, i) {
+        w[q] = w[q] || []
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s)
+        j.async = true
+        j.id = 'beacon-aplus'
+        j.src = 'https://d.alicdn.com/alilog/mlog/aplus.js?id=202951085'
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'aplus_queue')
+      aplus_queue.push({
+        action: 'aplus.setMetaInfo',
+        arguments: ['aplus-waiting', 'MAN'],
+      })
+      aplus_queue.push({
+        action: 'aplus.setMetaInfo',
+        arguments: ['aplus-rhost-v', 'alog.zjzwfw.gov.cn'],
+      })
+      aplus_queue.push({
+        action: 'aplus.setMetaInfo',
+        arguments: ['aplus-rhost-g', 'alog.zjzwfw.gov.cn'],
+      })
+      aplus_queue.push({
+        action: 'aplus.setMetaInfo',
+        arguments: ['appId', '60506758'],
+      })
+      aplus_queue.push({
+        action: 'aplus.setMetaInfo',
+        arguments: ['_hold', 'BLOCK'],
+      })
+    </script>
+    <script>
+      window.onload = function () {
+        const zwlog = new ZwLog({})
+        zwlog.onReady(function () {
+          let t2 =
+            (Number(window.performance.timing.domContentLoadedEventEnd) -
+              Number(window.performance.timing.navigationStart)) /
+            1000
+          let t0 =
+            (Number(window.performance.timing.responseEnd) -
+              Number(window.performance.timing.navigationStart)) /
+            1000
+          //PV日志
+          zwlog.sendPV({
+            miniAppId: '2002271810',
+            t2: t2 + 's',
+            t0: t0 + 's',
+            log_status: '01',
+          })
+        })
+      }
+    </script>
+    <!-- <script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+  <script>
+    let vConsole = new VConsole()
+  </script> -->
+  </head>
+
+  <body>
+    <div id="app">
+      <!--app-html-->
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
